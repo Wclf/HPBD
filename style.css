@@ -7,7 +7,9 @@
  
 body {
   background: #E5E5E5;
-  background-image: url("bg.jpg");
+  background-image: url("./img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
  
 #card-front {
@@ -202,7 +204,7 @@ font-family: 'Lobster', cursive;
 
 .cake_and_velas {
   position: absolute;
-  bottom: 25%;
+  bottom: 15%;
   left: 0;
   right: 0;
   overflow: hidden;

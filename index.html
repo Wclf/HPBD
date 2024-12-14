@@ -7,7 +7,7 @@
 	<meta name="HandheldFriendly" content="true">
 	<meta name="theme-color" content="#F26B38">
 
-	<title>Happy Birthday | Phuong Mai</title>
+	<title>Happy Birthday Phương Mai</title>
 	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -18,25 +18,32 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<audio id="song">
+		<source src="music/y2mate.com - Happy Birthday Piano Version.mp3">
+	  </audio>
+	  <script>
+		window.addEventListener("click" , () => {
+		  document.getElementById("song").play();
+		})
+		window.addEventListener("dblclick" , () => {
+		  document.getElementById("song").pause();
+		})
+	  </script>
 	<br> <br> <br> <br> <br>
 	<div id="card">
 		<div id="card-inside">
 			<div class="wrap">
 				<center><p class="animated infinite wobble"><b><u>Happy Birthday!</b></u></p><center>
-				<p> Happy Birthday, KKR!
-
-On this special day, I want to remind you how much you mean to me. Your presence in my life is a constant source of joy and inspiration. I am so grateful for every moment we share together.
+				<p id="letter"> 
 
  &nbsp;<i class="em-svg em-blush"></i></p>
-				<p>May your birthday be as wonderful and extraordinary as you are. Here’s to celebrating you today and always!
-
-With all my love
-				 </p><p class="signed"><u>Made With </b><b> <i class="em-svg em-heart"></i>AmsR</p>
+				<p id="letter2">
+				 </p><p class="signed"><u>Your Love</b><b> <i class="em-svg em-heart"></i>Ac wy 2😈</p>
 			</div>
 		</div>
 		<div id="card-front">
 			<div class="wrap">
-				<h1 class="animated infinite swing">Happy Birthday Love</h1>
+				<h1 class="animated infinite swing">Happy Birthday Phương Mai</h1>
 				<div class="cake_and_velas">
 					<div class="velas">
 						<div class="fuego"></div>
@@ -68,21 +75,22 @@ With all my love
 					</svg>
 				</div>
 			</div>
-			<button id="open" data-balloon="Click to Open Card!" data-balloon-length="medium" data-balloon-pos="left" data-balloon-visible>&gt;
+			<button id="open" data-balloon="Click Here :>" data-balloon-length="small" data-balloon-pos="left" data-balloon-visible>&gt;
 			</button>
-			<button id="close" data-balloon="! bɿɒɔ ɘƨolɔ oɈ ʞɔilƆ" data-balloon-length="medium" data-balloon-pos="left" data-balloon-visible>&lt;
+			<button id="close" data-balloon="Back!" data-balloon-length="small" data-balloon-pos="left" data-balloon-visible>&lt;
 			</button>
 			<div class="card-front_inside">
 				<br> <br> <br>
 				<div class="polaroid">
-					<div class="img" style="background-image: url('https://static.vecteezy.com/system/resources/previews/000/608/881/original/heart-flat-icon-vector.jpg')"></div>
+					<div class="img" style="background-image: url('./img/73e41cfadabc67e23ead.jpg')"></div>
 				<div class="polaroid">
-					<div class="img" style="background-image: url(./css/guitarboy.gif)"></div>
+					<div class="img" style="background-image: url(./img/73e41cfadabc67e23ead.jpg)"></div>
 				</div>
 				<div class="shadow"></div>
 			</div>
 		</div>
 	</div>
 	<script  src="script.js"></script>
+	<script  src="letter.js"></script>
 </body>
 </html>
